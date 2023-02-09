@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // sync js
+        console.log("Hello my name is Vijay");
+        console.log("I am a software developer");
+
+
+        //async js
+        setTimeout(()=>{
+            console.log("Hello welcome to async js");
+        }, 5000)
+        setTimeout(()=>{
+            console.log("lets learn SetTimeout");
+        }, 3000)
+        setTimeout(()=>{
+            console.log("Lets learn about functions");
+        }, 2000)
+        
+        // setTimeout function
+        function greeting(name){
+            console.log("Welcome to Javascript I am",name);
+        }
+        setTimeout( greeting,5000, "vijay");
+
+     let id=setTimeout((name)=>{
+        console.log("Hello there!", name);
+    },5000, name)
+   // clearTimeout(id);// It prevents the set time out method from executing the function inside in it.
+    </script>
+</body>
+</html>
